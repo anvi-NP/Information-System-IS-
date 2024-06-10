@@ -1,0 +1,1032 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* Resetting margin and padding for all elements */
+  
+}
+/* styling navigation bar */
+nav 
+{
+    background:#169388 0%;
+    background-image:radial-gradient(
+      /* shape for seprate color remix  */
+      circle 612px at 5.2% 51%,
+      #169388 0%,
+      #27a82e 50%,
+      #a2c132 100%
+    );
+    
+      height: 60px;
+      /* Setting height of the navigation bar */
+    
+   
+}
+/* logo text style edit */
+nav label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+   
+}
+
+
+nav{
+    flex: 1;
+    
+
+}
+/* Seprate text edit for design inside logo */
+nav label.logo span{
+    color: red;
+
+}
+
+/* Aligning and removing default list styles for navigation links */
+nav ul 
+{
+    float: right;
+    list-style-type: none;
+}
+
+/* Styling navigation list items */
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+/* Styling navigation links */
+nav ul li a{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 7px 24px;
+    border-radius: 3px;
+}
+
+/* Styling active and hover states of links */
+a.active{
+  background: #72726a;
+  transition: .5s;
+}
+a:hover{
+    background: #0cc9b9;
+    transition: .5s;
+}
+
+ /* Styling cursor and padding for icons */
+i{
+    cursor:pointer;
+    padding: 10px;
+}
+
+/* Setting width for navigation link images */
+nav ul li a img{
+  width: 14%;
+}
+
+
+  
+
+
+    /*--------------PART 1-----------*/
+   /* Setting margin for categories section */
+    .categories{
+  margin-top: 40px;
+}
+
+/* Aligning text in the center */
+.off{
+  text-align: center;
+}
+ /* Styling container for section */
+    .aasu{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      
+
+    }
+
+    /* Styling section within container */
+    .aasu-1{
+        flex-basis: 50%;
+        max-width: 300px;
+        
+        
+    }
+
+    /* Styling heading */
+    .aasu h1{
+        margin: 10px;
+        font-family: 'Gill Sans';
+        color:white;
+
+    }
+
+    .aasu .caption{
+        margin: 10px;
+        text-align: justify;
+        color: rgb(0, 0, 0);
+        font-family: 'Futara';
+        /* Styling caption text */
+        /* For Width */
+        -webkit-text-stroke-width: 0.5px;
+        /* Color Fill */
+  -webkit-text-stroke-color: rgb(31, 215, 114);
+  text-shadow: 1px 1px 2px rgb(7, 0, 0), 0 0 25px rgb(0, 0, 0), 0 0 5px rgb(57, 138, 102);
+    }
+
+    .aasu p span{
+      color: rgb(251, 255, 0);
+      /* Styling span element within paragraph */
+      /* For width */
+      -webkit-text-stroke-width: 0.5px;
+      /* color fill */
+  -webkit-text-stroke-color: rgb(234, 219, 59);
+  text-shadow: 1px 1px 2px rgb(96, 90, 4), 0 0 25px rgb(0, 0, 0), 0 0 5px rgb(249, 242, 36);
+    }
+
+   /* Styles the anchor elements within the buttons inside elements with the class "aasu-1".
+Sets the color to white.
+Removes the text decoration (underlining, etc.).
+Sets the font family to 'Lucida Sans'.*/
+    .aasu-1 button a{
+       color: white;
+        text-decoration: none;
+        font-family: 'Lucida Sans';
+        
+    }
+
+    /*Styles the button elements inside elements with the class "aasu-1".
+Adds a transition effect to the background with a duration of 0.5 seconds.
+Sets a margin of 40px on the top and bottom and 0 on the left and right.
+Sets the border radius to 20px.
+Sets the color to #f2f2f2 (light gray).
+Adds padding of 8px on the top and bottom and 30px on the left and right.
+Removes the border.
+Sets the background color to orange.
+Sets the display to inline-block.*/
+
+    .aasu-1 button{ 
+        transition: background 0.5s;
+        margin: 40px 0;
+        border-radius: 20px;
+        color: #f2f2f2;
+        padding:8px  30px ;
+        border: none;
+         background: orange;
+        display:inline-block
+
+    }
+
+    /*Styles the button elements inside elements with the class "aasu-1" when hovering over them.
+Changes the background color to green.*/
+    .aasu-1 button:hover{
+        background-color: green;
+    }
+    
+    
+/*Styles elements with the class "aasu-1".
+Sets the maximum width to 100%.
+Adds padding of 50px on the top and bottom and 0 on the left and right.
+Sets the flex property to 1.
+Adds left padding of 20px.*/
+    .aasu-1{
+        max-width: 100%;
+        padding: 50px 0;
+        flex:1;
+        padding-left:20px ;
+    }
+    
+    /*Styles the video elements.
+Sets the width to 100%.
+Applies a negative margin of 100px to the top.
+Sets the height to 600px.
+Positions the video element absolutely.
+Sets the z-index to -1, placing it behind other elements.
+Applies the "cover" value for the object-fit property to maintain the aspect ratio of the video while covering the entire container.*/
+    video{
+      width: 100%;
+      margin-top: -100px;
+      height: 600px;
+      position: absolute;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+
+    
+
+
+
+
+
+    /*------------------------Part 2--------------------------*/
+    /*Styles elements with the class "asudra-1".
+Sets the flex-basis to 30%, which determines the initial size of the flex item.
+Sets the minimum width to 250px.
+Adds a margin of 30px on the bottom.
+Adds padding of 10px.
+Adds a margin of 5px on the top.*/
+    .asudra-1{
+        flex-basis: 30%;
+        min-width: 250px;
+        margin-bottom: 30px;
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    /*Styles the image elements inside elements with the class "asudra-1".
+Sets the width to 100%.*/
+    .asudra-1 img{
+        width: 100%;
+    }
+
+    /*Styles elements with the class "small-container".
+Adds a margin of 50px on the top.
+Adds left and right padding of 40px.*/
+    .small-container{
+
+       margin-top: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
+      
+    }
+
+    /*Styles elements with the class "asudra-2".
+Adds a transition effect to the transform property with a duration of 0.5 seconds.
+Sets the flex-basis to 21%.
+Removes padding.
+Sets the minimum width to 200px.
+Adds a margin of 50px on the bottom.*/
+    .asudra-2{
+        transition: transform 0.5s;
+        flex-basis: 21%;
+        padding: 0px;
+        min-width: 200px;
+        margin-bottom: 50px;
+        
+
+    }
+
+    /*Styles the image elements inside elements with the class "asudra-2".
+Sets the width to 100%.*/
+    .asudra-2 img{
+        width: 100%;
+    }
+
+    /*Styles elements with the class "title".
+Adds a margin of 60px on the top.
+Centers the text alignment.
+Sets the position to relative.
+Sets the line height to 60px.
+Sets the text color to red.*/
+    .title{
+        margin-top: 60px;
+        text-align: center;
+        position: relative;
+        line-height: 60px;
+        color: red;
+        
+    }
+
+    /*Styles the marquee elements.
+Sets the background color to whitesmoke.
+Sets the font size to 30px.
+Sets the font weight to 500.
+Adds a blue box shadow.
+Sets the width to 100%.
+Sets the text color to black.
+Applies a radial gradient as the background image.
+Sets the stroke width for the text to 1px.
+Sets the stroke color for the text to black.*/
+    marquee {
+      background: whitesmoke;
+      font-size: 30px;
+      font-weight: 500;
+      box-shadow: blue;
+      width: 100%;
+      color: black;
+      background-image:radial-gradient(
+        /* shape for seprate color remix  */
+        circle 612px at 5.2% 51%,
+        #169388 0%,
+        #27a82e 50%,
+        #a2c132 100%
+        
+         
+        );
+      
+ 
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+    }
+  
+    
+/*Styles the pseudo-element "::after" of elements with the class "title".
+Sets the content of the pseudo-element to an empty string.
+Sets the background color to #ff523b.
+Sets the width to 80px.
+Sets the height to 5px.
+Sets the border-radius to 5px.
+Positions the pseudo-element absolutely.
+Aligns the bottom of the pseudo-element.
+Aligns the left of the pseudo-element to 50% of its containing element.
+Translates the pseudo-element horizontally by -50% of its own width.*/
+    .title::after{
+        content:'';
+        background: #ff523b;
+        width: 80px;
+        height: 5px;
+        border-radius: 5px;
+        position: absolute;
+        bottom:0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+/*Styles the h4 elements.
+Sets the text color to #555.
+Sets the font weight to normal.*/
+    h4{
+        color: #555;
+        font-weight: normal;
+
+    }
+
+    /*Styles the p elements inside elements with the class "asudra-2".
+Sets the font size to 13px.*/
+    .asudra-2 p{
+        font-size: 13px;
+    }
+
+    /*Styles the img elements inside elements with the class "rating".
+Sets the width to 10%.*/
+    .rating img{
+      width: 10%;
+    }
+    
+/*Styles elements with the class "asudra-2" when hovered.
+Translates the element vertically by -5px.*/
+    .asudra-2:hover{
+        transform: translateY(-5px);
+    }
+
+    /*Styles elements with the class "aasu2".
+Sets the display to flex.
+Aligns the items along the center vertically.
+Wraps the flex items to multiple lines if needed.
+Distributes the content around the available space with equal spacing on both sides.*/
+   .aasu2{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        justify-content: space-around;
+   }
+
+   /*Styles elements with the class "aasu-2" inside elements with the class "aasu2".
+Sets the flex-basis to 50%, determining the initial size of the flex item.
+Sets the maximum width to 600px.*/
+  .aasu2 .aasu-2
+  {
+    flex-basis: 50%;
+    max-width: 600px;
+  
+  }
+
+  /*Styles elements with the class "aasu-3" inside elements with the class "aasu2".
+Sets the flex-basis to 50%, determining the initial size of the flex item.
+Sets the maximum width to 300px.*/
+  .aasu2 .aasu-3
+  {
+    flex-basis: 50%;
+    max-width: 300px;
+    
+  }
+
+  /*Styles the img elements inside elements with the class "aasu-3" inside elements with the class "aasu2".
+Sets the width to 150%.*/
+  .aasu2 .aasu-3 img{
+    width: 150%;
+  }
+
+/* Styles elements with the class "container-2".
+Adds padding of 20px.
+Sets the background color to lightgrey. */
+  .container-2{
+    padding: 20px;
+    background-color:lightgrey;
+  }
+
+  /*Testimonial*/
+
+  /* Styles elements with the class "review".
+Adds padding to the top of 50px. */
+  .review{
+ 
+    padding-top:50px ;
+  }
+
+  /* Styles elements with the class "asudra-2" inside elements with the class "review".
+Sets the text alignment to center.
+Adds padding of 40px on the top and bottom, and 20px on the left and right.
+Adds a box shadow with specific properties.
+Sets the cursor to a pointer.
+Adds a transition effect of 0.5s for the transform property. */
+  .review .asudra-2{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0,0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+    
+  }
+
+  /* Styles the img elements inside elements with the class "asudra-2" inside elements with the class "review".
+Sets the width to 50px.
+Sets the height to 50px.
+Adds a margin on the top of 35px.
+Sets the border radius to 50% for a circular shape. */
+  .review .asudra-2 img{
+    width: 50px;
+    height: 50px;
+    margin-top: 35px;
+    border-radius: 50%;
+    
+   
+  }
+
+  /* Styles elements with the class "asudra-2" inside elements with the class "review" when hovered.
+Translates the element vertically by -10px. */
+  .review .asudra-2:hover{
+   transform: translateY(-10px);
+
+  }
+
+  
+  
+/* Styles the p elements inside elements with the class "asudra-2".
+Sets the font size to 12px.
+Adds a margin of 12 to all sides.
+Sets the font family to Trebuchet.
+Sets the text alignment to justify center. */
+  .asudra-2 p{
+    font-size: 12px;
+    margin: 12;
+    font-family: Trebuchet;
+    text-align: justify center;
+  }
+
+  /*----------------------------------------------Brands----------------------------------------------*/
+  .brand{
+    margin: 100px auto;
+  }
+  .asudra-4{
+    width: 160px;
+  }
+/* Brand overlay effects */
+  .asudra-4 img{
+   width: 100%;
+   cursor: pointer;
+   filter: grayscale(100%);
+  }
+/* Brand Hover effects Orginal pic view */
+  .asudra-4 img:hover{
+    filter: grayscale(0);
+  }
+
+
+  /*footer*/
+  .footer{
+    background:#e5d257 ;
+    color: #8a8a8a;
+    font-size: 15px;
+    padding: 60px 80px 20px;
+  }
+
+/* Styles the p elements inside elements with the class "footer".
+Sets the color to #8a8a8a. */
+  .footer p{
+    color: #8a8a8a;
+  }
+
+  /* Styles the h3 elements inside elements with the class "footer".
+Adds padding of 5px.
+Sets the color to #fff (white).
+Adds a margin at the bottom of 25px.
+Sets the font family to Gill Sans.
+css
+ */
+  .footer h3{
+    padding: 5px;
+    color: #fff;
+    margin-bottom: 25px ;
+    font-family: Gill Sans;
+  }
+
+  /* Styles elements with the classes "footer-asudra-1", "footer-asudra-2", "footer-asudra-3", and "footer-asudra-4".
+Sets the minimum width to 250px.
+Adds a margin at the bottom of 20px. */
+  .footer-asudra-1, .footer-asudra-2, .footer-asudra-3, .footer-asudra-4{
+    min-width: 250px;
+    margin-bottom:20px ;
+  }
+
+  /* Styles elements with the class "footer-asudra-1".
+Sets the flex basis to 30%. */
+  .footer-asudra-1{
+    flex-basis: 30%;
+  }
+  
+  /* Styles elements with the class "footer-asudra-2".
+Sets the flex property to 1, allowing it to grow and occupy available space.
+Sets the text alignment to center. */
+  .footer-asudra-2{
+    flex: 1;
+    text-align: center;
+  }
+
+  /*Styles elements with the class "logo" inside elements with the class "footer-asudra-2".
+Adds a margin at the bottom of 20px.
+Sets the font size to 36px.
+Sets the color to yellow.
+css*/
+  .footer-asudra-2 .logo{
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: yellow;
+  }
+
+  /*Styles span elements inside elements with the class "logo" inside elements with the class "footer-asudra-2".
+Sets the color to red.*/
+  .footer-asudra-2 .logo span{
+    color: red;
+  }
+
+  /*Styles elements with the classes "footer-asudra-3" and "footer-asudra-4".
+Sets the flex basis to 12%.
+Sets the text alignment to center.*/
+  .footer-asudra-3, .footer-asudra-4{
+    flex-basis: 12%;
+    text-align: center;
+  }
+
+  /* Styles ul elements inside elements with the class "footer-asudra-3".
+Sets the list style type to none, removing the bullet points.
+Sets the cursor to a pointer. */
+  .footer-asudra-3 ul{
+    list-style-type: none;
+    cursor: pointer;
+  
+  }
+/* Styles elements with the class "app-logo".
+Adds a margin at the top of 20px. */
+  .app-logo {
+    margin-top: 20px;
+
+  }
+  /* Styles img elements inside elements with the class "app-logo".
+Sets the width to 300px. */
+
+  .app-logo img{
+    width: 300px;
+  }
+
+  /* Styles hr elements inside elements with the class "footer".
+Removes the border.
+Sets the background color to #b5b5b5.
+Sets the height to 2px.
+Sets the margin to 20px at the top and bottom, and 0px on the left and right. */
+  .footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 2px;
+    margin: 20px 0;
+  }
+
+  /* Styles img elements inside elements with the class "footer-asudra-4".
+Sets the width to 6% of the parent container. */
+  .footer-asudra-4 img{
+    width: 6%;
+  }
+
+  /* Styles elements with the class "Copyright".
+Sets the text alignment to center. */
+  .Copyright{
+    text-align: center;
+  }
+
+
+
+
+/*Products*/
+
+/* Styles elements with the class "aasu".
+Sets the flex container's items to be spaced evenly with space between them.
+Sets the top margin to 100px, the bottom margin to 50px, and the left and right margins to auto. */
+.aasu{
+ justify-content: space-between;
+ margin: 100px auto 50px;
+}
+
+/* Styles select elements.
+Sets the border to be 1px solid with the color #ff523b.
+Sets the padding to 5px.
+Removes the default focus outline for select elements. */
+select{
+  border: 1px solid #ff523b;
+  padding: 5px;
+}
+
+
+select:focus{
+  outline: none;
+}
+
+/* Styles elements with the class "page-btn".
+Sets the top margin to 0, the bottom margin to 80px, and the left and right margins to auto. */
+.page-btn{
+  margin: 0 auto 80px;
+
+}
+
+/* Styles span elements within elements with the class "page-btn".
+Sets the display to inline-block.
+Sets the border to be 1px solid with the color #ff523b.
+Sets the left margin to 10px.
+Sets the width and height to 40px.
+Sets the text alignment to center.
+Sets the cursor to pointer.
+Sets the line height to 40px.
+Sets the font weight to 200. */
+.page-btn span{
+  display: inline-block;
+  border: 1px solid #ff523b;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+   text-align: center;
+  cursor: pointer;
+  line-height: 40px;
+  font-weight: 200;
+}
+
+/* Styles the span elements within elements with the class "page-btn" on hover.
+Sets the background color to orangered.
+Sets the text color to white. */
+.page-btn span:hover{
+ background-color: orangered;
+ color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* offer banner */
+
+/* Discount-container-styling */
+.discount-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #023047;
+  background-image: radial-gradient(
+    /* shape for seprate color remix  */
+    circle 610px at 5.2% 51%,
+    #169388 0%,
+    #27a82e 50%,
+    #a2c132 100%
+  );
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  padding: 8px 0;
+}
+/* Discount container- heading Styling */
+.discount-container .discount-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+/* discount container-subheading styling */
+.discount-container .discount-subheading {
+  font-size: 16px;
+}
+
+/* discount container-countdown timer styling */
+.discount-container .countdown-timer {
+  display: flex;
+  gap: 16px;
+}
+/* countdown timer-group styling */
+.countdown-timer .group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+/* countdown timer-value styling */
+.countdown-timer .value {
+  background: #fff;
+  color: #222;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px;
+  width: 35px;
+  text-align: center;
+  border-radius: 5px;
+}
+/* countdowntmer unit styling */
+.countdown-timer .unit {
+  font-size: 13px;
+}
+/* discount container-discount btn */
+.discount-container .discount-btn {
+  padding: 8px 24px;
+  background: rgb(99, 251, 215);
+  background-image: linear-gradient(
+    68deg,
+    rgb(99, 251, 215) 0%,
+    rgb(5, 222, 250) 100%
+  );
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: all 400ms ease;
+}
+/* discount container-btn hover */
+.discount-container .discount-btn:hover {
+  transform: scale(1.03);
+}
+
+
+
+
+
+
+/* Product Page */
+/* styling of products page */
+
+/* main container */
+.container{
+  margin-top: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+/* cointainer for image and details of image */
+.products{
+  width: 32%;
+  margin-top: 15px;
+  box-shadow: 0px 0px 25px 4px #EAEAEA;
+  padding: 10px;
+}
+/* hover effects on products */
+.products:hover{
+  background-color: whitesmoke;
+}
+ .productprice {
+  padding: 15px;
+  margin-top: 0px;
+
+}
+.lastprice{
+  margin-left:100px ;
+ 
+}
+/* styling image of products */
+.products .image img{
+  width: 50%;
+  height: auto;
+}
+/* heading styling */
+.items{
+
+        margin-top: 60px;
+        text-align: center;
+        position: relative;
+        line-height: 60px;
+        color: red;
+        
+
+}
+
+.items::after{
+  content:'';
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom:0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* styling row  */
+.items-1 {
+display: flex;
+justify-content: space-between;
+}
+/* font styling for text  */
+.items h2{
+  font-family: cursive;
+}
+/* rating image styling */
+.rating img{
+  width: 5%;
+  margin: 0px;
+}
+/* image styling */
+.image{
+  height: 200px;
+  text-align: center;
+}
+/* styling price container */
+.pricebox{
+  display: flex;
+  margin: 0px;
+  
+}
+/* styling a quickview botton for quick view product show up */
+.pricebox button{
+  width: 127px;
+  height: 38px;
+  background-color: aqua;
+  font-size: 20px;
+  border-radius: 16px;
+  border-color: none;
+  /* fOR ALINGING QUICK VIEW BTN */
+  margin-left: 100px;
+  margin-top: 22px;
+  cursor: pointer;
+}
+/* styling text on center of quickview */
+.quick{
+  text-align: center;
+  
+ 
+}
+/* styling qucik view image  */
+.model{
+  padding: 50px;
+  top: -10px;
+  position: fixed;
+  z-index: 99;
+  display: none;
+  background-color: whitesmoke; 
+}
+/* using box shadow for maincontainer */
+.mainbox{
+  background-color: white;
+  box-shadow: 0px 0px 25px 4px #EAEAEA;
+}
+/* displaying flex for display on row box item */
+.box{
+  display: flex;
+}
+/* quick view container details styling */
+.productdetail{
+  width: 250px;
+}
+
+
+
+
+
+
+/* Quick view  page styling css */
+
+
+/* main div styling */
+.mainbox{
+  max-width: 100%;
+display: flex;
+}
+
+/* image styling */
+.mainbox .imagee img{
+display: flex;
+flex-direction: column;
+max-height: 100%;
+max-width:100%;
+}
+/* image heading styling */
+.product-tittle{
+  font-size: 1rem;
+
+}
+/* rating star image  styling */
+.star img{
+width:17px;
+margin: -7px;
+
+}
+/* button styling */
+.btn{
+  background-color:rgb(204, 26, 67);
+  border-radius: 20px;  
+}
+/* button paragraph styling */
+.btn p{
+  font-size: medium;
+  color: aliceblue;
+  margin: 5px;
+  
+}
+/* hover effect in button */
+.btn p:hover{
+  cursor: pointer;
+}
+/* list styling */
+ ul{
+
+list-style-type:none;
+line-height:1.5 ;
+font-size: 12px;
+/* styling image under list */
+}
+ul  img{
+  height: 20px;
+  width: 20px;
+  margin: -4px;
+  padding: 3px;
+}
+.purchaseinfo
+{
+  font-size: 18px;
+  
+}
+/* input type styling */
+.purchaseinfo input{
+border: 2px solid black;
+border-radius: 30px;
+margin: 27px;
+}
+/* tittle class styling */
+.product-tittle{
+  font-size: 20px;
+}
+/* styling of anchor tag */
+.product-link{
+  background-color:rgb(229 33 19 / 91%);
+  color: white;
+  text-decoration: none;
+  border: 2px solid black;
+}
+/* styling input  */
+.purchaseinfo input{
+  height: 30px;
+  width: 90px;
+  text-align: center;
+}
+/* styling span */
+strong,span{
+  margin: 3px;
+}
+/* price styling */
+.price{
+  margin: 12px;
+ 
+}
+/* for Discount countainer gap */
+body {
+  margin-top: 76px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>Focus Fl@sh</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+<style>
+  /* Center aligns text */
+  p1{
+  text-align: center;
+}
+/* Center aligns a block-level element */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  size-adjust: 30%;
+}
+
+
+
+/* Center aligns text */
+p8{
+text-align: center;
+
+}
+
+/* Styling for the "asutosh" class */
+.asutosh {
+
+  margin-top: 60px;
+  text-align: center;
+  position: relative;
+  line-height: 60px;
+  color: red;
+  
+
+}
+
+/* Pseudo-element styling for the "asutosh" class */
+
+.asutosh ::after{
+  content:'';
+  background: #ff523b;
+  width: 150px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom:0;
+  left: 50%;
+  transform: translateX(-50%);
+ 
+}
+/* Styling for the "slideContainer" class */
+  .slideContainer{
+    width: 80%;
+    height: 500px;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 5px 5px 8px 5px;
+    box-sizing: border-box;
+
+  }
+
+  /* Styling for all <img> elements */
+  img{
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<body style="margin-top: 0px;">
+
+<!-- same as others comments are used -->
+<div>
+
+        <nav>
+        
+           
+            <label class="logo">Focus<span>Fl@sh</span></label>
+            
+           
+          
+            <ul>
+
+                <li><a  href="../index.html">Home</a></li>    
+                <li><a href="../HTML/product.html">Product</a></li>   
+                <li><a class="active"href="../HTML/blog.html">Blog</a></li> 
+                <li><a href="../HTML/research.html">Research</a></li>
+                <li><a href="../HTML/aboutus.html">About us</a></li>    
+                   
+                
+               <li>
+                <a href="#"><img src="../PNG/HEADER PNG/shopping-cart.png" alt=""></a>
+                <a href="../HTML/login.html"><img src="../PNG/HEADER PNG/user-circle.png" alt=""></a>
+               </li>
+            </ul>
+         
+        </nav>
+       
+    </div>
+ 
+    
+<!-- code start from here -->
+      
+        <img src="../PNG/blog/nlog.jpg">
+       
+     
+      
+       <h1 class="asutosh"><b>Technology</b></h1>
+       <img style="
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 690px;
+        margin-top: 40%;
+        z-index: -1;"
+       src="../PNG/blog/ms.jpeg">
+      
+        <main>
+        
+      <article>
+        <!-- A slideshow is used to cycle through elements -->
+             <div class="slideContainer">
+              <div id= "slideEffect">
+                <img src="../PNG/blog/img04.png" >
+              </div>
+            </div>
+            <script>
+              var Imagepath=['../PNG/blog/img09.png','../PNG/blog/img08.jpg','../PNG/blog/img04.png','../PNG/blog/img05.png']
+              var container = document.getElementById("slideEffect");
+              var blog = 0;
+              setInterval(slide,2000);
+              function slide (){
+                if (blog<Imagepath.length){
+                  blog=blog+1;
+                }else{
+                  blog=1;
+                }
+                container.innerHTML="<img src=" + Imagepath[blog-1]+">";
+              }
+                
+            </script>
+            <img style="
+            position: absolute;
+            left: 0px;
+            top: 0px;
+           height:1800px ;
+            margin-top: 100%;
+            z-index: -1;"
+           src="../PNG/blog/wrr.jpg">
+          <h2 style=" text-align: left;
+          
+          color: darkolivegreen;">Capture Every Moment with Ease. Your One-Stop For Camera Gear </h2>
+          <!-- The <p> tag defines a paragraph. -->
+          <p style="text-align: center;
+          color: darkgoldenrod;
+          font-weight: bold;
+           font-size: medium;
+           ">We believe that every moment in life deserves to be 
+            preserved .We love taking pictures and think that everybody can 
+            reazlize their creative potential with the appropriate camera.
+             <br>Because of this,
+            we provide a borad selection of cameras, lenses,
+             and accessories to suit all skill levels,
+             from noive to professional."</p></br>
+             <!-- The <div> tag defines a division or a section in an HTML document. -->
+              <!-- The <div> tag is easily styled by using the class or id attribute. -->
+             <div class="text"> 
+              <p1 style="font-family:Tahoma;"> Over the couple decades, technology has significantly changed how ecommerce is conducted. The internet is one of the primary technologies that has allowed ecommerce to thrive. Due to the development of the internet, businesses may now connect with clients on a global scale.Customers can now purchase online from anywhere, at any time, thanks to the proliferation of smartphones and tablets. Businesses can now offer a seamless shopping experience across a variety of platforms thanks to mobile applications and adaptable websites, while innovations like contactless payments and mobile wallets have speed up and simplified the checkout process. Technology has revolutionized the e-commerce field, including the sale of camera lenses and other related products.Digital photography is one of the most significant e-commerce technology. With the use of this technology, online merchants can show customers high-resolution photos and videos of their goods, empowering them to make wise purchases. Retailers may offer a more immersive picture of the goods by utilizing augmented reality and
+
+              360-degree photography.
+            </p1>
+            <div class="container">
+              <div class="image">
+            <img src="../PNG/blog/im13.png" height="90px" class="center"  alt="">
+          </div>
+          <div class="text">
+            <p2 style="
+              text-align: center; color: #0e0108;">Technology has brought about both positive and negative impacts on society, and this is also true for e-commerce websites like Camera websites.On the plus side, e-commerce has transformed how consumers buy by enabling them to do it from the convenience of their homes. Because of the enhanced convenience and accessibility for consumers as well as the increasing rivalry among shops, consumers may now find lower pricing and better offers.
+              E-commerce websites have also helped small businesses expand by enabling them to access a wider audience and compete with bigger shops. With tailored suggestions and quicker delivery times, the introduction of cutting-edge technology like artificial intelligence and machine learning has further enhanced the shopping experience for consumers.
+              E-commerce websites, however, can sometimes have detrimental effects. Security of personal and financial data is one of the key issues, since hackers might target e-commerce websites to steal critical information. Concerns have also been raised regarding how e-commerce would affect traditional brick-and-mortar retailers, since the move to online purchasing may result in store closures and the elimination of employment in the retail sector.E-commerce has unquestionably transformed how we buy, giving us ease and easy access to a variety of goods and services. The use of this technology is not without drawbacks, though. The effect of e-commerce on local companies, especially small and independent stores, is one of the main worries. Smaller firms are at risk as a result of the disruption caused by online marketplaces in the conventional retail sector. As a result, there have been employment losses and a decrease in the variety of local economies. Additionally, e-commerce has increased the need for packaging and shipping supplies, adding to the already urgent problem of environmental pollution. Because more delivery trucks and other vehicles are on the roads to meet the rising demand for online orders, the growth of online shopping has also resulted in more traffic and congestion in urban areas.. As such, while e-commerce has brought many benefits, it is important to consider and address its negative impacts in order to achieve a more sustainable and equitable retail industry.
+            </p2>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div>
+        <!-- The <ins> tag defines a text that has been inserted into a document. -->
+        <h2 style=" text-align: left;
+        color: darkolivegreen;"><ins>Use Of Technology In Today World</ins> </h2>
+      </div>
+      <hr>
+      <div>
+        <!-- The <img> tag is used to embed an image in an HTML page. -->
+        <!-- src is use to specifies the path to the image -->
+        <!-- alt is use to specifies an alternate text for the image, 
+        if the image for some reason cannot be displayed -->
+        <img style="
+          width: 200px;
+          float: left;
+          margin-right: 10px;
+          "src="../PNG/blog/img20.png" width="350px" alt="">
+        </div>
+        <div>
+      <p3>
+        1. Hardware: Hardware is the collective term for all of the tangible physical components that make up an electrical system or computer.<br> Physical devices such as computers, smartphones, tablets, and other electronic devices.A computer system's hardware is just one component; the firmware, which is integrated into the hardware and directly controls it, is another. On top of the hardware, there is software that communicates with the hardware by using the firmware.Hardware virtualization is now feasible because to the development of cloud technologies and virtual machines.In order to share resources and utilize them effectively, a hypervisor builds virtual representations of internal hardware within an operating system. By abstracting the physical computing components in this manner, software enables them to share their capabilities with other users. When renting out hardware resources over the internet, infrastructure as a service models use hardware virtualization.
+      </br>
+      </p3>
+      </div>
+      <!-- The <hr> element is most often displayed as a horizontal rule that is 
+      used to separate content  in an HTML page -->
+      <hr>
+      <div  style="margin-bottom: 5%;">
+        <img style="
+        width: 200px;
+        float: right;
+        height: 150px;
+        margin-right: 10px;" src="../PNG/blog/img21.png" alt="">
+      </div>
+      <div>
+        <p4>
+          2.Networks: Data systems are used in network technology to provide and manage digital resources through a computer network.  A wide range of businesses require computer hardware and system software to maintain networks, necessitating the management of experts in these fields.To enable the transmission of data, often crucial data, from one computer to another, a computer network is developed. For big enterprises, the precision and quickness of everyday business transactions are essential to success. Unplanned interruptions that prevent these routine company operations from being completed are expensive and might be disastrous. Networks are widely used, which increases the reach of businesses. Numerous businesses have benefited greatly from these remote interactions with clients, vendors, and business partners. It has consequently had a favorable effect on many countries' total output. But these increases in productivity are only as good as the network. 
+        </p4>
+      </div>
+    </div>
+
+    <hr>
+    <div  >
+      <img style="
+      width: 200px;
+      float: left;
+      margin-right: 10px;" src="../PNG/blog/img22.PNG"  alt="">
+    </div>
+    <div >
+      <p5 >
+        3.Artificial Intelligence: The simulation of human intellect by computer-coded algorithms is known as artificial intelligence (AI). These days, this code is widely used in a variety of applications, including cloud-based applications for business, consumer apps, and even embedded firmware.The capacity of artificial intelligence to reason and execute actions that have the highest likelihood of reaching a certain objective is its ideal quality. Machine learning (ML), which refers to the idea that computer systems can automatically learn from and adapt to new data without being helped by humans, is a subset of artificial intelligence. By ingesting vast quantities of unstructured data, including text, photos, and video, deep learning algorithms make it possible for this autonomous learning.Today, AI is widely used in a variety of applications, with varying degrees of class. A common use of AI is chatbots that may be found on websites or in the form of smart speakers (like Alexa or Siri). AI is used to automate manufacturing processes, reduce different types of redundant cognitive work, etc.
+      </p5>
+    </div>
+    <hr>
+    <div>
+      <img style="
+      width: 200px;
+      float: right;
+      margin-right: 10px;" src="../PNG/blog/IMG24.PNG" alt="">
+    </div>
+    <div>
+      <p6>
+        4.Virtual and Augmented Reality: Virtual reality (VR) and augmented reality (AR), two technologies that are quickly expanding, are changing the way we interact with digital information and the real world. Technology was used to create the simulated environment known as virtual reality. An immersive 3D environment is shown to the user when they are wearing a VR headset. This atmosphere may be entirely made up or it may be based on actual places or events. Through the use of hand controllers or other input devices, the user can engage with this environment in a variety of ways.The process of augmented reality, on the other hand, includes putting digital material over the physical environment. In order to detect the actual environment and incorporate virtual aspects into it, this technology employs gadgets with cameras and sensors, such as smartphones or tablets. A few examples of this kind of digital material are 3D models, animations, and others. From gaming and entertainment to education and training, AR has a wide range of uses.
+       </p6>
+    </div>
+    <hr>
+    <div >
+      <img style="
+      width: 200px;
+      float: left;
+      margin-right: 10px;" src="../PNG/blog/IMG25.PNG" alt="">
+    </div>
+    <div>
+      <p7>
+        5.Internet of Things: The network of physical objects"things"that are integrated with sensors, software, and other technologies for the purpose of communicating and sharing data with other devices and systems through the internet is referred to as the IoT.Several technologies are used by IoT to link the digital and physical worlds. Sensors, which can track changes in temperature, motion, or basically any aspect of the environment, are built into physical objects, and actuators, which take signals from the sensors and take action in reaction to those changes. In order to monitor or control the activities of linked machines and objects, the sensors and actuators connect to computer systems via wired (such as Ethernet) or wireless (such as WiFi, cellular) networks.The constant connectivity that IoT enables, combined with data and analytics, provides new opportunities for companies to innovate products and services, as well as to increase the efficiency of operations.Indeed, IoT has emerged as one of the most significant trends in the digital transformation of business and the economy since the 2010s.
+      </p7>
+    </div>
+    <hr>
+    <!-- The <br> HTML element produces a line break in text  -->
+    <br>
+    <h3 class="asutosh"><b>Wrapping up</b></h3>
+    <p8>
+      Our civilization has mostly become dependent on technology. So many aspects of our daily life would be fundamentally altered without technology breakthroughs. Technology works to meet the shifting demands of society as it advances. As society changes, so does technology. Despite this, advancement has a cost. Depending on how much individuals value technology and scientific advancements in their personal life, this price differs for each individual.The acceptance or rejection of a product by society, as well as the presence or absence of path dependency, are key factors in the success of technology. Consumers benefit from evolving technology in a wide range of areas of their life, including the workplace, communications, resource consumption, and so much more. These advancements in a wide range of sectors benefit society by making it simpler to fulfill certain duties. Innovation will never stop; rather, it will advance at a faster rate as science and technology advance to ever-more cutting-edge levels. 
+    </p8>
+    </main>
+  </article>
+
+  <!---Footer elements start form here-->
+
+<!-- Class for footer elements -->
+<div class="footer">
+  <!-- Again creating class inside div tag -->
+      <div class="container-f">
+          <!-- Again creating class inside div tag for seprate container -->
+          <div class="aasu">
+              <!-- creating class inside div tag for seperate container for text and sperate class for  png format file with path location. -->
+              <div class="footer-asudra-1">
+                    <h3>Download Our App</h3>       
+                  <p>Download App for Android and ios mobile phone</p> 
+                  <div class="app-logo">
+                     <img src="../PNG/FOOTER PNG/app-store-png-logo-33115.png" alt="">
+                  </div>
+              </div>
+             <!-- Seperate container with class name insde div tag containing different class for logo text format with paragraph below it -->
+            <div class="footer-asudra-2">
+              <label class="logo">Focus<span>Fl@sh</span></label> 
+            <p>Our Purpose Is To Sustainably Make the Pleasure and 
+              Benifits of Sports Accessible to the Many</p> 
+        </div>
+        <div class="footer-asudra-3">
+          <h3>Useful Links</h3>       
+          <ul>
+            <li><a  href="../index.html">Home</a></li>
+            <li><a  href="../HTML/product.html">Product</a></li>
+            
+            <li><a href="../HTML/Research.html">Research</li>
+                <li><a  href="../HTML/aboutus.html">About us</a></li>
+              <!-- png image for shopping cart inside footer-asudra-3 class along with above text. -->
+              <li><img src="../PNG/HEADER PNG/shopping-cart.png"></li>
+          </ul> 
+         </div>
+         <!-- class for footer png so it can be style as per users requirement with the help of css  -->
+    <div class="footer-asudra-4">
+  
+         <h3>Follow Us</h3>     
+           <!--Social media png file along with path location  -->
+     <img src="../PNG/FOOTER PNG/facebook.png">
+     <img src="../PNG/FOOTER PNG/twitter.png">
+     <a href="https://www.instagram.com/accounts/login/"><img src="../PNG/FOOTER PNG/instagram.png"></a>
+     <img src="../PNG/FOOTER PNG/youtube.png">
+      <img src="../PNG/FOOTER PNG/telegram.png">
+  </div> 
+          </div>
+          <hr>
+          <p class="Copyright">Copyright &#169; 2023 - Focus Fl@sh</p>
+       
+      </div>
+  </div>
+
+    
+  </body>
+</html>
+    

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Form Validation</title>
+    </head>
+    <body>
+        <form name="messageForm" onsubmit="validateForm()">
+        <p>First name: <input type="text" name="firstname"></p>
+        <p>Last name: <input type="text" name="lastname"></p>
+        <p>Gender: <input type="radio" name="gender" value="male" checked>Male
+        <input type="radio" name="gender" value="female">Female</p>
+        <p>Message: <hr><textarea name="message" row="5" col="15" placeholder="Additional Message here"></textarea></p>
+        <p><input type="submit" value="Send"></p>
+        
+        </form>
+       <!-- javacode from here -->
+        <script>
+              function validateForm() {
+           
+                 var fname = document.forms["messageForm"]["firstname"].value;
+                 var lname = document.forms["messageForm"]["lastname"].value;
+                 var gender = document.forms["messageForm"]["gender"].value;
+                 var message = document.forms["messageForm"]["message"].value;
+
+           if (fname == "" || lname == "" || message == "")
+           {
+            alert("Please fill the form.");
+           }
+           
+           else {
+            alert("Thank you for the feedback.");
+         }
+            }
+           
+        </script>
+</body>
+</html>
